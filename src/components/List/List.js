@@ -3,16 +3,18 @@ import styles from './List.scss';
 import Hero from '../Hero/Hero.js';
 import Column from '../Column/Column.js';
 import PropTypes from 'prop-types';
+import {settings} from '../../data/dataStore';
 
 class List extends React.Component {
   static propTypes = {
     title: PropTypes.node.isRequired,
-    children: PropTypes.node,
     headerImage: PropTypes.string,
     columnDescription: PropTypes.node,
+    description: PropTypes.node,
+    columns: PropTypes.array,
   }
   static defaultProps = {
-    children: <p>I can do all the things!!!</p>,
+    description: settings.defaultListDescription,
   }
   render() {
     return (
@@ -22,9 +24,9 @@ class List extends React.Component {
           {this.props.children}
         </div>
         <div className={styles.columns}>
-          <Column columnDescription={'Column 1'}></Column>
-          <Column columnDescription={'Column 2'}></Column>
-          <Column columnDescription={'Column 3'}></Column>
+          <Column columnDescription={'Animals'}></Column>
+          <Column columnDescription={'Plants'}></Column>
+          <Column columnDescription={'Minerals'}></Column>
         </div>
       </section>
     )
