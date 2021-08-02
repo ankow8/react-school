@@ -9,6 +9,8 @@ import Icon from '../Icon/Icon.js';
 class Column extends React.Component {
   static propTypes = {
     title: PropTypes.string.isRequired,
+    cards: PropTypes.array.isRequired,
+    icon: PropTypes.string.isRequired,
   }
   state = {
     cards: this.props.cards || [],
@@ -21,8 +23,8 @@ class Column extends React.Component {
           {
             key: state.cards.length ? state.cards[state.cards.length-1].key+1 : 0,
             title,
-          }
-        ]
+          },
+        ],
       }
     ));
   }
@@ -35,12 +37,12 @@ class Column extends React.Component {
         ))}
         <Creator text={settings.columnCreatorText} action={title => this.addCard(title)}/>
       </section>
-    )
+    );
   }
 }
 
 Column.propTypes = {
   columnDescription: PropTypes.node,
-}
+};
 
 export default Column;
