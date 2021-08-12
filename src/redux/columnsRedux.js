@@ -7,7 +7,7 @@ export const getColumnsForList = ({columns}, listId) => columns.filter(column =>
 const reducerName = 'columns';
 const createActionName = name => `app/${reducerName}/${name}`;
 
-// action types
+// action types // jak zapisuje sie ta nazwa i plik w ktorym sie zapisuje?
 export const ADD_COLUMN = createActionName('ADD_COLUMN');
 
 // action creators
