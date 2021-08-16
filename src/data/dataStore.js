@@ -30,7 +30,7 @@ export const faqPage = {
   question2: 'What is a Redux?',
   answer2: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
   question3: 'What is a Router?',
-  answer3: ' Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+  answer3: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
 };
 
 export const pageContents = {
@@ -97,6 +97,18 @@ const lists = [
     title: 'Things to do <sup>soon!</sup>',
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
+  {
+    id: 'list-2',
+    title: 'Places to visits <sup>soon!</sup>',
+    description: 'Amazing places I must to discovering!',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Awo2bEx1tzN892ZMD2NYv0MTrk6pYd_UXA&usqp=CAU',
+  },
+  {
+    id: 'list-3',
+    title: 'Competence to uploads <sup>soon!</sup>',
+    description: 'My competence I need to grow up!',
+    image: 'https://www.centranum.com/wp-content/uploads/2018/05/competence-and-competency-2.png',
   },
 ];
 
