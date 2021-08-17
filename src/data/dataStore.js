@@ -7,6 +7,7 @@ export const settings = {
     defaultText: 'Add new item',
   },
   search: {
+    searchResultText: 'Search results',
     defaultText: 'Search...',
     icon: 'search',
   },
